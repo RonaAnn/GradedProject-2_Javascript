@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/resume.css" />
+    <title>Resume</title>
+</head>
+<body>
+    <div class="container">
+            <div class="actions">
+                <button id="prev" class="btn" onclick="prev()">Prev</button>
+                <input type="search" id="search-box" placeholder="Search for job title" />
+                <button id="next" class="btn" onclick="next()">Next</button>
+            </div>
+        <div class="details">
+                <div id="noResult">
+                    <img src="./resources/notfound.png" alt="Result not found">
+                </div>
+            
+            <div id="resume-container">
+                <div id="resume-header">
+                    <div class="hidden"></div>
+                    <div id="header-data">
+                        <p id="name">John Doe</p>
+                        <p class="position">Applied For: <span id="jobTitle"></span></p>
+                    </div>
+                    <img src="./resources/user.jpeg" alt="user image">
+                </div>
+
+                <div class="resume-body">
+                    <div class="basics">
+                        <div class="personal-info">
+                            <p class="titles">Personal Information</p>
+                            <p id="phone"></p>
+                            <p id="email"></p>
+                            <a href="" id="linkedin">LinkedIn</a>
+                        </div>
+                        <div class="tech-skills">
+                            <p class="titles">Technical Skills</p>
+                            <p></p>
+                            <p id="techSkills"></p>
+                        </div>
+                        <div>
+                            <p class="titles">Hobbies</p>
+                            <p></p>
+                            <p id="hobbies"></p>
+                        </div>
+                    </div>
+                    <div class="other-details">
+                        <h2 class="work-exp">Work Experience in previous company</h2>
+                        <p id="prevCompanyDetails"></p>
+
+                        <h2>Projects</h2>
+                        <p id="projectDetails"></p>
+
+                        <h2>Education</h2>
+                        <p id="edu"></p>
+
+                        <h2>Internship</h2>
+                        <p id="internship"></p>
+
+                        <h2>Achievements</h2>
+                        <p id="achievements"></p>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <script src="./Script/data.js"></script>
+    <script src="./Script/resume.js"></script>
+</body>
+</html>

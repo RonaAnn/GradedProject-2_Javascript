@@ -1,0 +1,46 @@
+body {
+    background-image: url(../resources/bg.jpg);
+    background-size: cover;
+}
+
+section {
+    min-height: 100vh;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid black;
+    border-radius: 5px;
+    line-height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5%;
+}
+
+input {
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+#button {
+    text-align: center;
+}
+
+#button button {
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: lavender;
+    padding: 5px 10px;
+}
+
+#error{
+    color: red;
+    text-align: center;
+    font-size: large;
+}
